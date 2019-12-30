@@ -75,11 +75,11 @@ function updateFireIntensityPerPixel(currentPixelIndex) {
     return;
   }
 
-  const decay = 1;
+  const decay = Math.floor(Math.random() * 3);
   const belowPixelFireItensity = firePixelsArray[bellowPixelIndex];
   const newFireItensity =
     belowPixelFireItensity - decay >= 0 ? belowPixelFireItensity - decay : 0;
-  firePixelsArray[currentPixelIndex] = newFireItensity;
+  firePixelsArray[currentPixelIndex - decay] = newFireItensity;
 }
 
 function renderFire() {

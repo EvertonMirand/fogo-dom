@@ -1,5 +1,5 @@
 const firePixelsArray = [];
-const fireWidth = 60;
+const fireWidth = 40;
 const fireHeight = 40;
 const fireColorsPalette = [
   { r: 7, g: 7, b: 7 },
@@ -41,7 +41,7 @@ const fireColorsPalette = [
   { r: 255, g: 255, b: 255 }
 ];
 
-const debug = false;
+const debug = true;
 
 function start() {
   createFireDataStructure();
